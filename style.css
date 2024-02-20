@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+  --preto: #1E1E1E;
+  --vermelho: #BA0403;
+  --vinho: #940000;
+  --vinhoEscuro: #710012;
+  --azulMarinho: #1d1A55;
+  --cinza: #797979;
+  --branco: #EBEBEB;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: 40%;
+}
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+  background-color:var(--branco);
+  text-align: center;
+  font-size: 16pt;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  height: 100vh;
+}
+.navbar-nav{
+  margin: 0px 30%;
+}
+.bg-dark {
+  background-color: var(--vinhoEscuro) !important;
+}
+.btn_precisaAjuda{
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: var(--azulMarinho);
+  color: var(--branco);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* Carrosel */
+
+.transparence {
+  opacity: 0.; /* Defina a opacidade desejada (0.0 a 1.0) */
+}
+
+.nav-item .nav-link:hover{
+  border-bottom: 3px solid #1D1A55 !important;
+}
+.carousel-indicators{
+  list-style: none;
+}
+.carousel-container {
+  position: relative;
+}
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  left: 70%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 900px; /* Limita a largura máxima */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item .carousel-caption h5 {
+  text-align: center;
+  font-size: 42pt;
+  margin-bottom: 10px; /* Adiciona um espaço entre o título e o texto */
+}
+
+.carousel-item .carousel-caption p {
+  text-align: center;
+  font-size: 18pt;
+}
+
+.quemSomos {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--branco);
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top of each container-item */
+  padding-top: 5%; /* Ajuste o valor conforme necessário */
+
+}
+.quemSomos h1{
+  font-weight: bold;
+  font-size: 32pt !important;
+}
+.quemSomos h2{
+  font-size: 14pt;
+}
+.quemSomos p {
+  text-align: justify;
+  font-size: 20pt;
+}
+.container-item {
+  margin-left: 10%;
+  margin-top: 5%;
+  flex: 1;
+}
+
+.container-item img {
+  max-width: 100%;
+  border-radius: 3px;
+
+}
+#botaoNos {
+  width: 200px;
+  padding: 20px;
+  background-color: var(--azulMarinho);
+  color: var(--branco);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16pt;
+  text-decoration: none;
+  line-height: 1.5;
+  margin: 0 auto;
+  display: block; /* Para garantir que a margem automática funcione corretamente */
+  margin-top: 15px;
+  font-weight: bold;
+  transform: background-color;
+  margin-bottom: 10%;
+}
+#botaoNos:hover{
+  background-color: var(--vinhoEscuro);
+}
+
+.container-imagem-sobre{
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  margin-top: 5%;
+}
+.container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+.container-imagem-sobre2{
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: relative;
+}
+.container-imagem-sobre2 img{
+  position: absolute;
+  top: 0px;
+  width: 25%;
+  height: 200px;
+}
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.titulo{
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #1D1A55;
+  width: 23%;
+  text-align: left !important;
+  margin-left: 10%;
+  font-size: 32pt;
+  padding: 20px;
+  margin-top: 9%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-icon {
+  color: var(--azulMarinho);
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4em !important;
+}
+.content-icon:hover{
+  color: var(--vinhoEscuro)
+}
+
+.areaAtuacao{
+  display: flex;
+  height: 2vh;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.areaAtuacao:hover{
+  transform: scale(1.2);
+}
+
+.areaAtuacao a {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.areaAtuacao p{
+  margin-top: 15%;
+  font-size: 16pt;
+}
+
+.lineAreaAtuacao {
+  margin-top: 5%;
+  text-align: center;
+}
+.container-localizacao{
+  height: 75vh;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rodape{
+ 
+}
+.informationFooter {
+  font-size: 125%;
+  color: #c18824;
+  
+}
+
+.telefones,
+.mail {
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.telefones:hover {
+  color: #c18824;
+  text-decoration: none;
+  font-size: 130%;
+
+}
+
+.mail:hover {
+  color: #c18824;
+  text-decoration: none;
+  font-size: 130%;
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  font-size: 170%;
+}
+
+.logos1:hover,
+.logos2:hover,
+.logos3:hover,
+.logos4:hover {
+  font-size: 120%;
+}
+
+#maps {
+  width: 80%;
+}
+
+
+
+@media (min-width: 441px) and (max-width: 1020px) {
+  .container-imagem-sobre{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 50%;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .container-item {
+    margin-left: 5%; /* Ajustando margem para melhorar espaço em telas menores */
+  }
+
+  .quemSomos {
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    height: auto; /* Ajustando altura conforme o conteúdo */
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    font-size: 14pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
+  }
+
+  /* Ajustes na estilização da container-sections para telas menores */
+  .container-sections {
+    padding: 20px; /* Adapte conforme necessário */
+  }
+
+  .titulo {
+    font-size: 24px; /* Reduz o tamanho do título */
+  }
+
+  .content-icon {
+    font-size: 3em !important; /* Reduz o tamanho do ícone */
+  }
+
+  .areaAtuacao p {
+    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
+    font-size: 14pt;
+  }
+
+  .titulo {
+    width: 80%; /* Ajustando a largura do título em telas menores */
+  }
+
+  .lineAreaAtuacao {
+    margin-top: 10%; /* Ajustando a margem em telas menores */
+  }
+}
+
+/*Para aplicativos com tela entre 999 && 1224*/
+@media (min-width: 999px) and (max-width: 1224px) {
+.btn_precisaAjuda {
+  display: none;
+}
+}
+@media (min-width: 1020px) and (max-width: 1600px){
+  .container-imagem-sobre {
+    display: none;
+  }
+  .container-sections {
+    padding: 20px; /* Adapte conforme necessário */
+  }
+
+  .titulo {
+    font-size: 24px; /* Reduz o tamanho do título */
+  }
+
+  .content-icon {
+    font-size: 3em !important; /* Reduz o tamanho do ícone */
+  }
+
+  .areaAtuacao p {
+    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
+    font-size: 14pt;
+  }
+
+  .titulo {
+    width: 80%; /* Ajustando a largura do título em telas menores */
+  }
+
+  .lineAreaAtuacao {
+    margin-top: 10%; /* Ajustando a margem em telas menores */
+  }
+}
